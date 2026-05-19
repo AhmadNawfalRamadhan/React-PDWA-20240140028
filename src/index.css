@@ -1,0 +1,112 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap');
+
+/* ── Custom theme tokens (pengganti tailwind.config.js) ── */
+@theme {
+  --font-orbitron: "Orbitron", sans-serif;
+  --font-rajdhani: "Rajdhani", sans-serif;
+  --font-mono: "Share Tech Mono", monospace;
+
+  --color-teal:        #0195c3;
+  --color-teal-bright: #01c3f0;
+  --color-teal-dim:    #016fa0;
+  --color-navy:        #0a2a6e;
+  --color-sky:         #5ab8d8;
+  --color-ice:         #b8dff0;
+  --color-off-white:   #e8f4fd;
+  --color-bg-dark:     #040e18;
+  --color-bg-main:     #061a2e;
+  --color-bg-panel:    #071e35;
+}
+
+/* ── Custom animations ── */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-10px); }
+}
+@keyframes pulseTeal {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(1,149,195,0.5); }
+  50%       { box-shadow: 0 0 0 10px rgba(1,149,195,0); }
+}
+@keyframes scan {
+  0%   { top: -2px; opacity: .6; }
+  100% { top: 100%; opacity: 0; }
+}
+@keyframes shimmer {
+  0%   { background-position: -400% center; }
+  100% { background-position:  400% center; }
+}
+@keyframes radarSpin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+@keyframes dataScroll {
+  0%   { transform: translateY(0); }
+  100% { transform: translateY(-50%); }
+}
+@keyframes borderPulse {
+  0%, 100% { border-color: rgba(1,149,195,0.2); }
+  50%       { border-color: rgba(1,149,195,0.6); }
+}
+@keyframes wingGlow {
+  0%, 100% { filter: drop-shadow(0 0 8px rgba(1,149,195,0.4)); }
+  50%       { filter: drop-shadow(0 0 22px rgba(1,149,195,0.85)); }
+}
+@keyframes ripple {
+  0%   { transform: scale(0.8); opacity: 0.7; }
+  100% { transform: scale(2.5); opacity: 0; }
+}
+
+/* ── Utility classes ── */
+* { scroll-behavior: smooth; box-sizing: border-box; }
+
+body {
+  background-color: #061a2e;
+  color: #e8f4fd;
+  font-family: "Rajdhani", sans-serif;
+}
+
+body::after {
+  content: '';
+  position: fixed; inset: 0; z-index: 9999;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    0deg, transparent, transparent 3px,
+    rgba(0,0,0,0.025) 3px, rgba(0,0,0,0.025) 4px
+  );
+}
+
+.float        { animation: float 4s ease-in-out infinite; }
+.pulse-teal   { animation: pulseTeal 2.5s infinite; }
+.radar-spin   { animation: radarSpin 5s linear infinite; }
+.data-scroll  { animation: dataScroll 22s linear infinite; }
+.border-pulse { animation: borderPulse 3s ease-in-out infinite; }
+.wing-glow    { animation: wingGlow 3s ease-in-out infinite; }
+.ripple       { animation: ripple 3s ease-out infinite; }
+.ripple-2     { animation-delay: 1s; }
+.ripple-3     { animation-delay: 2s; }
+
+.scan-line {
+  position: absolute; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(1,195,240,0.5), rgba(1,195,240,0.8), rgba(1,195,240,0.5), transparent);
+  animation: scan 4s linear infinite;
+  pointer-events: none; z-index: 2;
+}
+
+.text-shimmer {
+  background: linear-gradient(90deg, #e8f4fd 20%, #0195c3 40%, #5bc8e8 60%, #e8f4fd 80%);
+  background-size: 400% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 5s linear infinite;
+}
+
+.hex-bg {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='104'%3E%3Cpath d='M30 52L0 34V0l30-18 30 18v34zM30 104L0 86V52l30-18 30 18v34z' fill='none' stroke='%230195c312' stroke-width='1'/%3E%3C/svg%3E");
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #040e18; }
+::-webkit-scrollbar-thumb { background: rgba(1,149,195,0.5); border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: #0195c3; }
