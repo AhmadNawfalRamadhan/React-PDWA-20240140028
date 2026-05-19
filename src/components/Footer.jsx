@@ -1,4 +1,4 @@
-import CompassLogo from "./CompassLogo";
+import compassLogoImg from "../assets/seed_freedom_compass_logo.webp";
 export default function Footer({ navigate }) {
   return (
     <footer className="bg-bg-dark border-t border-teal/15 pt-16 pb-8 relative overflow-hidden">
@@ -9,7 +9,12 @@ export default function Footer({ navigate }) {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <CompassLogo size={44} mini={true}/>
+              <img
+                  src={compassLogoImg}
+                  alt="COMPASS"
+                  className="w-9 h-9 object-contain"
+                  style={{ filter: "drop-shadow(0 0 4px rgba(1,149,195,0.7))" }}
+                 />
               <div>
                 <span className="font-orbitron font-black text-base tracking-widest text-off-white">COMPASS</span>
                 <div className="h-px bg-gradient-to-r from-teal to-transparent mt-0.5"/>
