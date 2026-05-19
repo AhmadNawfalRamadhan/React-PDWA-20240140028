@@ -1,17 +1,25 @@
 import { useEffect } from "react";
 
+// PILOT/CAPTAIN IMAGES — import semua foto pilot di sini
 import kiraImg from "../assets/members/kira_Yamato_29_01.webp";
 import ShinnImg from "../assets/members/Shinn_Asuka_29_01.webp";
 import LunaImg from "../assets/members/Lunamaria_Hawke_29_01.webp";
 import AgnesImg from "../assets/members/Agnes_Giebenrath_29_01.webp";
 import AlexeiImg from "../assets/members/Alexei_Konoe_29_01.webp";
 import MuImg from "../assets/members/Mu_La_Flaga_29_01.webp";
+import AthrunImg from "../assets/members/Athrun_Zala_GSF.webp";
+import HildaImg from "../assets/members/Hilda_Harken_29_01.webp";
+import MurrueImg from "../assets/members/Murrue_Ramius_29_01.webp";
+// MOBILE SUIT/WARSHIP IMAGES — import semua gambar MS di sini
 import freedomImg from "../assets/members/Rising_Freedom_Gundam_lineart.webp";
 import justiceImg from "../assets/members/Immortal_Justice_Gundam_lineart.webp";
 import millenniumImg from "../assets/members/Millennium_29_01.webp";
 import murasameImg from "../assets/members/Murasame_Kai_Front.webp";
 import gelgoogImg from "../assets/members/Gelgoog_Menace_Lunamaria_Earth_Pack.webp";
-import gyanImg from "../assets/members/Gyan_Strom_Agnes.webp";
+import gyanAImg from "../assets/members/Gyan_Strom_Agnes.webp";
+import ArchImage from "../assets/members/Archangel.webp";
+import ZImage from "../assets/members/GSF-ZGok.webp";
+import GyanHImage from "../assets/members/Gyan_Strom_Hilda_Atmo_Pack.webp";
 
 // 👤 FOTO PILOT — ganti null dengan import gambar
 const PILOT_IMAGES = {
@@ -21,6 +29,9 @@ const PILOT_IMAGES = {
   "Shinn Asuka":     ShinnImg, // ← import lalu taruh di sini
   "Lunamaria Hawke": LunaImg, // ← import lalu taruh di sini
   "Agnes Giebenrath":AgnesImg, // ← import lalu taruh di sini
+  "Athrun Zala":     AthrunImg, // ← import lalu taruh di sini
+  "Hilda Harken":    HildaImg, // ← import lalu taruh di sini
+  "Murrue Ramius":   MurrueImg, // ← import lalu taruh di sini
 };
 
 // 🤖 GAMBAR MOBILE SUIT — ganti null dengan import gambar
@@ -30,7 +41,10 @@ const MS_IMAGES = {
   "STTS/F-400 Murasame Kai":       murasameImg, // ← import lalu taruh di sini
   "STTS-808 Immortal Justice Gundam":justiceImg,// ← import lalu taruh di sini
   "ZGMF-2025/F GELGOOG Menace":    gelgoogImg, // ← import lalu taruh di sini
-  "ZGMF-2027/A GYAN Strom":        gyanImg, // ← import lalu taruh di sini
+  "ZGMF-2027/A GYAN Strom Agnes":        gyanAImg, // ← import lalu taruh di sini
+  "LCAM-01XA Archangel":   ArchImage, // ← import lalu taruh di sini
+  "ZGMF-MM07 Z'Gok":                ZImage, // ← import lalu taruh di sini
+  "ZGMF-2027/A GYAN Strom Hilda":                     GyanHImage, // ← import lalu taruh di sini
 };
 
 // ============================================================

@@ -22,9 +22,9 @@ const MEMBERS = [
     unit:  "MILLENNIUM",
     type:  "NEWTYPE COORDINATOR",
     clearance: "OMEGA",
-    emoji: "👑",
+    emoji: "⚓",
     ms:    "LHM-BB03S Millennium",
-    bio:   "Panglima tertinggi COMPASS. Memegang otoritas penuh atas semua operasi militer dan diplomatik lintas blok.",
+    bio:   "Kapten kapal Millennium di COMPASS yang dikenal tenang dan cerdas dalam memimpin operasi militer.",
     msStats: [
       { val:"S+",  label:"ARMOR" },
       { val:"A",   label:"SPEED" },
@@ -62,7 +62,7 @@ const MEMBERS = [
     unit:  "MURASAME KAI",
     type:  "NATURAL ACE",
     clearance: "ALPHA",
-    emoji: "🛡️",
+    emoji: "✨",
     ms:    "STTS/F-400 Murasame Kai",
     bio:   "Natural terbaik yang pernah ada. Dikenal sebagai pria yang bisa menolak hal yang mustahil.",
     msStats: [
@@ -123,7 +123,7 @@ const MEMBERS = [
     type:  "EXTENDED NATURAL",
     clearance: "GAMMA",
     emoji: "⚡",
-    ms:    "ZGMF-2027/A GYAN Strom",
+    ms:    "ZGMF-2027/A GYAN Strom Agnes",
     bio:   "Mantan Extended yang kini pulih dan berkontribusi sebagai advisor teknis dan lapangan untuk unit COMPASS.",
     msStats: [
       { val:"A",   label:"ARMOR" },
@@ -136,6 +136,68 @@ const MEMBERS = [
       { val:"84",  label:"CONTROL" },
     ],
   },
+  {
+  name:  "Athrun Zala",
+  role:  "TACTICAL ACE / AGENT",
+  unit:  "Z'GOK",
+  type:  "COORDINATOR",
+  clearance: "ALPHA",
+  emoji: "🛡️",
+  ms:    "ZGMF-MM07 Z'Gok",
+  bio:   "Pilot veteran dengan kemampuan strategi dan pertarungan tinggi. Salah satu aset terpenting COMPASS di medan perang.",
+  msStats: [
+    { val:"A+",  label:"ARMOR" },
+    { val:"S",   label:"SPEED" },
+    { val:"S+",  label:"MOBILITY" },
+  ],
+  pilotStats: [
+    { val:"98",  label:"REFLEX" },
+    { val:"98",  label:"TACTIC" },
+    { val:"95",  label:"ADAPT" },
+  ],
+},
+
+{
+  name:  "Hilda Harken",
+  role:  "TRI-SQUAD LEADER",
+  unit:  "GYAN STROM",
+  type:  "NATURAL",
+  clearance: "BETA",
+  emoji: "🔪",
+  ms:    "ZGMF-2027/A GYAN Strom Hilda",
+  bio:   "Pilot berpengalaman dari Terminal yang dikenal agresif dan sangat handal dalam pertempuran jarak dekat.",
+  msStats: [
+    { val:"A",   label:"ARMOR" },
+    { val:"A+",  label:"SPEED" },
+    { val:"A",   label:"POWER" },
+  ],
+  pilotStats: [
+    { val:"92",  label:"REFLEX" },
+    { val:"90",  label:"ACCURACY" },
+    { val:"93",  label:"COMBAT" },
+  ],
+},
+
+{
+  name:  "Murrue Ramius",
+  role:  "FLAGSHIP CAPTAIN",
+  unit:  "ARCHANGEL",
+  type:  "NATURAL",
+  clearance: "OMEGA",
+  emoji: "🚢",
+  ms:    "LCAM-01XA Archangel",
+  bio:   "Kapten legendaris yang memimpin Archangel dengan ketenangan dan kemampuan komando luar biasa.",
+  msStats: [
+    { val:"S",   label:"DEFENSE" },
+    { val:"A",   label:"FIREPOWER" },
+    { val:"S+",  label:"COMMAND" },
+  ],
+  pilotStats: [
+    { val:"95",  label:"LEADERSHIP" },
+    { val:"93",  label:"TACTIC" },
+    { val:"97",  label:"DECISION" },
+  ],
+},
 ];
 
 const timeline = [
